@@ -14,7 +14,7 @@ Window {
         id: root
         width: window.width
         height: window.height
-        source: "assets/background.svg"
+        source: "svg/background.svg"
         fillMode: Image.PreserveAspectCrop
 
         ColumnLayout {
@@ -23,7 +23,7 @@ Window {
             anchors.right: root.right
 
             Image {
-                source: "assets/settings.svg"
+                source: "svg/settings.svg"
                 Layout.alignment: Qt.AlignTop | Qt.AlignRight
                 Layout.margins: 10
             }
@@ -59,15 +59,15 @@ Window {
                 }
 
                 Image {
-                    source: "assets/ruby.svg"
+                    source: "svg/ruby.svg"
                     Layout.margins: 10
                 }
                 Image {
-                    source: "assets/sapphire.svg"
+                    source: "svg/sapphire.svg"
                     Layout.margins: 10
                 }
                 Image {
-                    source: "assets/emerald.svg"
+                    source: "svg/emerald.svg"
                     Layout.margins: 10
                 }
                 Rectangle {

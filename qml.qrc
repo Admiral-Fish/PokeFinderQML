@@ -1,10 +1,14 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>assets/background.svg</file>
-        <file>assets/emerald.svg</file>
-        <file>assets/ruby.svg</file>
-        <file>assets/sapphire.svg</file>
-        <file>assets/settings.svg</file>
+    </qresource>
+    <qresource prefix="/svg">
+        <file alias="background.svg">Images/background.svg</file>
+        <file alias="settings.svg">Images/settings.svg</file>
+        <file alias="emerald.svg">Images/emerald.svg</file>
+        <file alias="ruby.svg">Images/ruby.svg</file>
+        <file alias="sapphire.svg">Images/sapphire.svg</file>
+        <file alias="firered.svg">Images/firered.svg</file>
+        <file alias="leafgreen.svg">Images/leafgreen.svg</file>
     </qresource>
 </RCC>
