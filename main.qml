@@ -76,6 +76,7 @@ Window {
                     Layout.alignment: Qt.AlignHCenter
                     Layout.margins: 10
                     Layout.columnSpan: 4
+                    radius: 5
                     color: "#707070"
                 }
             }
