@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>assets/background.svg</file>
+        <file>assets/emerald.svg</file>
+        <file>assets/ruby.svg</file>
+        <file>assets/sapphire.svg</file>
+        <file>assets/settings.svg</file>
+    </qresource>
+</RCC>
