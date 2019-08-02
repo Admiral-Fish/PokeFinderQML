@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Controls 2.12
+import QtQuick.Layouts 1.12
 
 Window {
     width: 1280
@@ -26,45 +27,41 @@ Window {
                 width: parent.width - sidebar.width
                 height: parent.height
 
-                Column {
-                    spacing: 20
+                GridLayout {
+                    rowSpacing: 20
+                    columnSpacing: 20
 
-                    Row {
-                        spacing: 20
+                    ColumnLayout {
+                        spacing: -2
 
-                        Column {
-                            Text {
-                                text: "3RD"
-                                font.bold: true
-                                color: "#707070"
-                            }
-                            Text {
-                                text: "GEN"
-                                color: "#707070"
-                            }
+                        Text {
+                            Layout.alignment: Qt.AlignHCenter
+                            text: "3RD"
+                            font.pixelSize: 20
+                            font.bold: true
+                            color: "#707070"
                         }
-
-                        Image {
-                            source: "svg/ruby.svg"
-                            sourceSize.width: scrollview.width * 0.20
-                            sourceSize.height: width / 2
-                        }
-
-                        Image {
-                            source: "svg/sapphire.svg"
-                            sourceSize.width: scrollview.width * 0.20
-                            sourceSize.height: width / 2
-                        }
-
-                        Image {
-                            source: "svg/emerald.svg"
-                            sourceSize.width: scrollview.width * 0.20
-                            sourceSize.height: width / 2
+                        Text {
+                            Layout.alignment: Qt.AlignHCenter
+                            text: "GEN"
+                            font.pixelSize: 20
+                            color: "#707070"
                         }
                     }
-
+                    Image {
+                        source: "svg/ruby.svg"
+                    }
+                    Image {
+                        source: "svg/sapphire.svg"
+                    }
+                    Image {
+                        source: "svg/emerald.svg"
+                    }
                     Rectangle {
-                        width: scrollview.width * 0.8
+                        Layout.row: 1
+                        Layout.column: 1
+                        Layout.columnSpan: 3
+                        Layout.fillWidth: true
                         height: 3
                         radius: 5
                         color: "#707070"
