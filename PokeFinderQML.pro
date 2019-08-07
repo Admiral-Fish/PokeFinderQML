@@ -1,7 +1,7 @@
 lessThan(QT_MAJOR_VERSION, 5):error("You need at least Qt 5.12 to build PokeFinder")
 equals(QT_MAJOR_VERSION, 5):lessThan(QT_MINOR_VERSION, 12):error("You need at least Qt 5.12 to build PokeFinder")
 
-QT += quick
+QT += quick svg
 CONFIG += c++1z lrelease embed_translations
 
 TARGET = PokeFinder
